@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Quotes</title>
+    <style>
+      .quote {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Random Quotes</h1>
+    {% for quote in quotes %}
+    <div class="quote">
+      <p>{{ quote.text }}</p>
+      <p>- {{ quote.author }}</p>
+    </div>
+    {% endfor %} <button onclick="location.reload()">Refresh</button>
+  </body>
+</html>
